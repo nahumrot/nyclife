@@ -1,0 +1,310 @@
+/* index */
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(172, 169, 169);
+    box-shadow: 0 5px 15px rgba(8, 8, 8, 0.006);
+    z-index: 999;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4;
+    left: 20%;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{ 
+    display: none;}
+/*productos*/
+#hero{
+    background-image: url("./portada/portada.jfif");
+    height: 90vh;
+    width: 100%;
+    background-position: top 55% right 0 ;
+}
+.sectionp1{
+    padding: 40px 80px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#feature .febox{
+    width: 180px;
+    padding: 25px 15px;
+}
+#feature .febox :hover{
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.384);
+}
+#productos1{
+    text-align: center;
+}
+.procontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#productos1 .pro{
+    width: 13%;
+    min-width: 200px;
+    padding: 2px 20px;
+    border: 1px solid #979797;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.003);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+}
+#productos1 .pro :hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.010);
+}
+#productos1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#productos1 .pro .des{
+    text-align: start;
+    padding: 0px 0;
+}
+#productos1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#productos1 .pro .des h5{
+    padding-top: 0px;
+    color: black;
+    font-size: 14px;
+}
+#productos1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+.titulo{
+    padding-top: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+}
+.carro{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .seguime {
+    color: #088178;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.table-productos{
+    display: flex;
+}
+.table-productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.table-cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+@media(max-width:799px) {
+    .sectionp1{
+        padding: 40px 40px;
+    }
+    .logo{
+        width: 70%;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        color: #979797;
+        box-shadow: rgba(0, 0, 0, 0.003);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease;
+    }
+    #navbar.active{
+        right: 0;
+        background-color: white;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color: #000000;
+        font: 24px;
+        padding-left: 20px;
+    }
+
+    #hero{
+        height: 70vh;
+        width: 76%;
+        padding: 0 80px;
+        background-position: top 50% right 50%;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #000000;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #feature{
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 10px 15px;
+    }
+    #productos1 .procontainer{
+        justify-content: center;
+    }
+    #productos1 .pro{
+        margin: 15px;
+    }
+ 
+}
+@media (max-width:477px) {
+    .sectionp1{
+        padding: 20px;
+    }
+    #nav{ 
+        padding:  10px 30px;
+    }
+    #hero{
+        padding: 0 48px;
+        background-position: 50%;
+    }
+    #feature{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #productos1 .pro{
+        width: 100%;
+    }
+}
+/*producto*/
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+    width: 50%;
+    margin-right: 50%;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 40%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{ 
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+} 
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+} 
+#prodetails .single-pro-details input{
+    width: 10%;
+    height: 17px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+} 
+#prodetails .single-pro-details input :focus{
+    outline: none;
+}
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #cce7d0;
+} 
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}

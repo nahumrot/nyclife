@@ -1,0 +1,42 @@
+[
+    {
+      "precio": 11000,
+      "id": 1,
+      "title": "Auricular Bluetooth JBL"
+    },
+    {
+      "precio": 3800,
+      "id": 2,
+      "title": "Auricular Bluetooth XIAOMI"
+    },
+    {
+      "precio": 22000,
+      "id": 3,
+      "title": "Cafetera Kanji"
+    },
+    {
+      "precio": 3500,
+      "id": 4,
+      "title": "Matermo 750ml ROLAN"
+    },
+    {
+      "precio": 25000,
+      "id": 5,
+      "title": "Smartwatch GTR AMAZFIT"
+    },
+    {
+      "precio": 3900,
+      "id": 6,
+      "title": "Pava Electrica Winco"
+    },
+    {
+        "precio": 310000,
+        "id": 7,
+        "title": "Celular Z Flip 3 SAMSUNG"
+      },
+      {
+        "precio": 3500,
+        "id": 8,
+        "title": "Salad Maker KANJI"
+      }
+  ]
